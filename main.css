@@ -1,0 +1,160 @@
+.content
+{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+
+    background-image: url(fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+form
+{
+    margin: 40px auto;
+    height: 65%;
+    width: 30%;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: transparent;
+    text-align: left;
+
+    backdrop-filter: blur(12px);
+    box-shadow: 0 25px 60px;
+    border-color: transparent;
+}
+.form2
+{
+    margin: 20px auto;
+    height: 65%;
+    width: 30%;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: transparent;
+    text-align: left;
+
+    backdrop-filter: blur(12px);
+    box-shadow: 0 25px 60px;
+    border-color: transparent;
+}
+.campo
+{
+    margin-top: 20px;
+    background-color: aliceblue;
+    border-radius: 12px;
+    padding: 10px;
+    text-align: left;
+}
+hr
+{
+    height: 4px;
+    background-color: blueviolet;
+    border: 0px;
+}
+h2
+{
+    text-align: center;
+    color: white;
+}
+.Enviar
+{
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 12px;
+    align-items: center;
+    background-color: #352A9C;
+    border-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.Enviar:hover
+{
+    background-color: #493AD6;
+}
+.botones
+{
+    align-items: center;
+    text-align: center;
+}
+input
+{
+    border: 0px;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    outline: none;
+    width: 350px;
+}
+p
+{
+    color: white;
+    font-weight: bold;
+}
+.paneles
+{
+
+    margin-top: 10px;
+    display: inline-flex;
+    font-size: 15px;
+}
+.checkbox
+{
+    width: 20px;
+    margin-right: 10px;
+}
+.link
+{
+    margin-left: 105px;
+}
+nav
+{
+    position: float;
+    height: 50px;
+    width: 100%;
+    background-color: #84429E;
+    position: relative;
+
+}
+nav a
+{
+    display: inline-flex;
+    color: white;
+    text-decoration: none;
+    margin-inline: 30px;
+    padding: 10px;
+}
+nav a:hover
+{
+    border-bottom: 3px solid white;
+}
+.agradece,img
+{
+    height: auto;
+    width: 300px;
+    padding: 10px;
+
+}
+.agradece p
+{
+    padding: 0px;
+}
+
+select
+{
+    height: 35px;
+    width: 400px;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+.texto
+{
+    height: 200px;
+    width: 400px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    outline: none;
+}
