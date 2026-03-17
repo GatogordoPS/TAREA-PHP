@@ -15,7 +15,7 @@
 	        <a href="#Recibir">Recibir</a>
 	        <a href="#Cerrar">Cerrar Sesion</a>
         </nav>
-        <form class="form2" action="">
+        <form class="form2" action="GET">
             <p>Para</p>
             <!-- <php ?-->
             <select>
