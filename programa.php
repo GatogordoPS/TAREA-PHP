@@ -15,17 +15,8 @@ function mostrar_alumnos(){
     
     echo "<h3>Con while</h3>";
 
-    $contador = 0;
-
     while ($fila = $resultado->fetch_array()) {
-
-        echo '<p>Nombre alumno: '.$fila["nombre"].'</p>';
-
-        $contador++;
-
-        if ($contador == 3) {
-            break;
-        }
+        echo '<p>ID: '.$fila["id"].' Nombre: '.$fila["nombre"].'</p>';
     }
 
 }
