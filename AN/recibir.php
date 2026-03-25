@@ -37,7 +37,7 @@ $resultado = $conexion->query($sql);
 
 <div class="form3">
 
-<?php while($fila = $resultado->fetch_assoc()){ ?>
+<?php while($fila = $resultado->fetch_array()){ ?>
 
     <div class="caja2">
         <img class="jesuita" src="jesus.jpg">
