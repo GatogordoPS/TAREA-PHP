@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Agradecer</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="content">
+    <div class="Agradece">
+        <img src="./agradece.png">
+    </div>
+
+    <nav>
+        <a href="agradecer.html">Agradecer</a>
+        <a href="recibir.html">Recibir</a>
+        <a href="logout.php">Cerrar Sesión</a>
+    </nav>
+
+    <form class="form2" action="agradecer.php" method="POST">
+        <p>Para</p>
+        <select name="persona">
+            <option>--- Selecciona un nombre ---</option>
+            <option>Nico</option>
+            <option>Iván</option>
+            <option>Teresa</option>
+        </select>
+
+        <p>Quiero agradecerte</p>
+        <textarea class="texto" name="mensaje" placeholder="Escribe aquí tu mensaje..."></textarea>
+
+        <div class="botones">
+            <button class="Enviar">ENVIAR</button>
+        </div>
+    </form>
+</body>
+</html>

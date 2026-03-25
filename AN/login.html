@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="content">
+
+<div class="Agradece">
+    <img src="agradece.png">
+    <p>Comparte gratitud y fortalece la comunidad</p>
+</div>
+
+<form class="form" action="validar.php" method="POST">
+
+    <h2>Inicia sesión para continuar</h2>
+    <hr>
+
+    <p>Usuario</p>
+    <div class="campo">
+        <i class="fa-solid fa-user"></i>
+        <input type="text" name="usuario" placeholder="tu usuario" required>
+    </div>
+
+    <p>Contraseña</p>
+    <div class="campo">
+        <i class="fa-solid fa-lock"></i>
+        <input type="password" name="clave" placeholder="Introduce tu contraseña" required>
+    </div>
+
+    <div class="paneles">
+        <input type="checkbox">
+        <span>Recordarme</span>
+        <span class="derecha">¿Olvidaste tu contraseña?</span>
+    </div>
+
+    <button class="Enviar">ENVIAR</button>
+
+</form>
+
+</body>
+</html>
