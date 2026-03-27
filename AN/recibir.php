@@ -1,16 +1,15 @@
 <?php
 include("configdb.php");
-
 session_start();
 
 $conexion = conectar();
 
-$idUsuario = $_SESSION['puesto'];
+$idUsuario = $_SESSION['equipo'];
 
-$sql = "SELECT A.mensaje, B.jesuita 
-        FROM Agradecimientos A
-        JOIN Alumnos B ON A.idEmisor = B.puesto
-        WHERE A.idReceptor = '$idUsuario'";
+$sql = "SELECT a.idAgradecimiento, a.mensaje, b.web
+        FROM agradecimientos a
+        JOIN alumnos b ON a.idEmisor = b.equipo
+        WHERE a.idReceptor = '$idUsuario'";
 
 $resultado = $conexion->query($sql);
 ?>
@@ -30,23 +29,20 @@ $resultado = $conexion->query($sql);
 </div>
 
 <nav>
-    <a href="agradecer.html">Agradecer</a>
-    <a href="recibir.php">Recibir</a>
-    <a href="logout.php">Cerrar Sesión</a>
+<a href="agradecer.php">Agradecer</a>
+<a href="recibir.php">Recibir</a>
+<a href="logout.php">Cerrar Sesión</a>
 </nav>
 
 <div class="form3">
 
 <?php while($fila = $resultado->fetch_array()){ ?>
 
-    <div class="caja2">
-        <img class="jesuita" src="jesus.jpg">
-        <p><?php echo $fila['jesuita']; ?></p>
-    </div>
-
-    <div class="caja1">
-        <p><?php echo $fila['mensaje']; ?></p>
-    </div>
+<div class="caja1">
+<a href="<?php echo $fila['web']; ?>/index.php?id=<?php echo $fila['idAgradecimiento']; ?>">
+<?php echo $fila['mensaje']; ?>
+</a>
+</div>
 
 <?php } ?>
 
