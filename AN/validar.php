@@ -6,7 +6,7 @@ $conexion = conectar();
 $usuario = $_POST['usuario'];
 $clave = $_POST['clave'];
 
-$sql = "SELECT * FROM Alumnos 
+$sql = "SELECT * FROM alumnos 
         WHERE usuario='$usuario' 
         AND password='$clave'";
 
@@ -17,10 +17,9 @@ if($resultado->num_rows > 0){
     $fila = $resultado->fetch_array();
 
     session_start();
-    $_SESSION['puesto'] = $fila['puesto'];
-    $_SESSION['jesuita'] = $fila['jesuita'];
+    $_SESSION['equipo'] = $fila['equipo'];
 
-    header("Location: agradecer.html");
+    header("Location: agradecer.php");
 }else{
     header("Location: login.html");
 }
